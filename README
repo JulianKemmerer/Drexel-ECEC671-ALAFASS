@@ -1,0 +1,35 @@
+ ________________________________________________
+/     ___    __    ___    _________   __________ \
+|    /   |  / /   /   |  / ____/   | / ___/ ___/ |
+|   / /| | / /   / /| | / /_  / /| | \__ \\__ \  |
+|  / ___ |/ /___/ ___ |/ __/ / ___ |___/ /__/ /  |
+| /_/  |_/_____/_/  |_/_/   /_/  |_/____/____/   |
+\                                                /
+ ------------------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\/\
+                ||----- |
+                ||     ||
+
+A Long Acronym for a Satisfiability Solver
+
+To compile: 
+Use the provided make file in the src directory.
+
+$ make debug
+To make with debugging symbols.
+
+$ make
+To make with the -02 flag (default).
+
+The output of make is the ALAFASS executable.
+
+To run ALAFASS with debug information:
+$ ./ALAFASS -l# <file>
+Where # is debugging level (defaults to 1).
+<file> is the cnf file you wish to read.
+
+To run ALAFASS without debug information (faster):
+$ ./ALAFASS <file>
+<file> is the cnf file you wish to read.
